@@ -1,4 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { Processor } from 'postcss';
 
 export const shazamCoreApi = createApi({
     reducerPath: 'shazamCoreApi',
@@ -12,9 +13,9 @@ export const shazamCoreApi = createApi({
 
     endpoints: (builder) => ({
         getTopCharts: builder.query({
-            query: 'charts/world'
+            query: () => 'charts/world'
         })
     })
 })
 
-export const { useGetTopChartQuery } = shazamCoreApi;
+export const { useGetTopChartsQuery } = shazamCoreApi;
