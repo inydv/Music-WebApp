@@ -10,7 +10,7 @@ const ArtistDetails = () => {
     data: artistData,
     isFetching: isFetchingArtistDetails,
     error,
-  } = useGetSongDetailsQuery({ artistId });
+  } = useGetArtistRelatedQuery(artistId);
 
   if (isFetchingArtistDetails) {
     return <Loader title="Searching artist details" />;
