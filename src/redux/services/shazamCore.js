@@ -1,5 +1,4 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import { Processor } from 'postcss';
 
 export const shazamCoreApi = createApi({
     reducerPath: 'shazamCoreApi',
