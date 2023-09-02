@@ -1,7 +1,7 @@
 import loader from './loader.svg';
-import favicon from './favicon.ico';
+import logo from './logo.png';
 
 export {
   loader,
-  favicon
+  logo,
 };
